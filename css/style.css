@@ -65,7 +65,7 @@
     margin-bottom: 25px;
     width: 420px;
     height: 45px;
-    border: 1.5px solid var(--ne-dark-blue);
+    border: 1.5px solid var(--ne-grayish-blue);
     border-radius: 5px;
     text-indent: 20px;
     font-weight: 600;
@@ -101,4 +101,9 @@
     color: var(--ne-grayish-blue);
     text-align: center;
     font-size: 11px;
+}
+.undertext .link {
+    color: var(--pr-red);
+    text-decoration: none;
+    font-weight: 700;
 }
