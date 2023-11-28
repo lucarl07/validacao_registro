@@ -18,7 +18,6 @@
 }
 
 .content {
-    border: 1px solid black;
     margin: auto;
     display: flex;
     max-width: 1440px;
@@ -27,7 +26,7 @@
 
 .text-float {
     margin: auto;
-    margin-right: 25px;
+    margin-right: 35px;
     width: 500px;
     height: fit-content;
     color: white;
@@ -40,7 +39,7 @@
 
 .register-area {
     margin: auto;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 .card {
     margin-bottom: 20px;
