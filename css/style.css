@@ -4,7 +4,7 @@
     --sc-dark-green: hsl(154, 53%, 41%);
     --sc-light-green: hsl(154, 77%, 58%);
     --ac-blue: hsl(248, 32%, 49%);
-    --ne-dark-blue: hsla(249, 10%, 26%, 0.123);
+    --ne-dark-blue: hsla(249, 10%, 26%, 0.25);
     --ne-grayish-blue: hsl(246, 25%, 77%);
 }
 
@@ -42,12 +42,25 @@
     margin: auto;
     margin-left: 25px;
 }
+.card {
+    margin-bottom: 20px;
+    width: 490px;
+    height: 64px;
+    color: white;
+    background: var(--ac-blue);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 64px;
+    box-shadow: 0px 5px 0px var(--ne-dark-blue);
+}
+
 .formulary {
     padding: 35px;
     width: 420px;
     height: 380px;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0px 5px 0px var(--ne-dark-blue);
 }
 .form-input {
     margin-bottom: 25px;
