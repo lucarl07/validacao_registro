@@ -1,14 +1,93 @@
 :root {
     --pr-red: hsl(0, 100%, 74%);
     --pr-green: hsl(154, 59%, 51%);
+    --sc-dark-green: hsl(154, 53%, 41%);
+    --sc-light-green: hsl(154, 77%, 58%);
     --ac-blue: hsl(248, 32%, 49%);
     --ne-dark-blue: hsla(249, 10%, 26%, 0.123);
     --ne-grayish-blue: hsl(246, 25%, 77%);
 }
 
-body {
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+} body {
     background-color: var(--pr-red);
     background-image: url(../images/bg-intro-desktop.png);
-    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    max-width: 1440px;
+    height: 100vh;
+}
+
+.text-float {
+    border: 1px solid black;
+    margin: auto;
+    margin-right: 25px;
+    width: 500px;
+    height: fit-content;
+    color: white;
+}
+.text-float h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 32px;
+}
+
+.register-area {
+    border: 1px solid black;
+    margin: auto;
+    margin-left: 25px;
+}
+.formulary {
+    padding: 35px;
+    width: 450px;
+    height: 380px;
+    background-color: white;
+    border-radius: 15px;
+}
+.form-input {
+    margin-bottom: 25px;
+    width: 450px;
+    height: 45px;
+    border: 1.5px solid var(--ne-dark-blue);
+    border-radius: 5px;
+    text-indent: 20px;
+    font-weight: 500;
+}
+.form-button {
+    width: 454px;
+    height: 50px;
+    color: white;
+    background: var(--pr-green);
+    border: 1.5px solid var(--sc-dark-green);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 50ms ease;
+}
+.form-button:hover {
+    height: 53px; margin-top: -3px;
+    border-bottom-width: 4.5px;
+}
+.form-button:active {
+    height: 50px; 
+    margin-top: 3px; margin-bottom: -3px;
+    background-color: var(--sc-light-green);
+    border-bottom-width: 1.5px;
+    border-color: var(--pr-green);
+}
+.undertext {
+    margin-top: 11px;
+    color: var(--ne-grayish-blue);
+    text-align: center;
+    font-size: 11px;
 }
