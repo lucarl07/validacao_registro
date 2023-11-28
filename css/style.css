@@ -61,8 +61,19 @@
     border-radius: 15px;
     box-shadow: 0px 5px 0px var(--ne-dark-blue);
 }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-height: 72px;
+    max-height: 80px;
+}
+
+.input-img-flex {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+}
 .form-input {
-    margin-bottom: 25px;
     width: 420px;
     height: 45px;
     border: 1.5px solid var(--ne-grayish-blue);
@@ -70,7 +81,22 @@
     text-indent: 20px;
     font-weight: 600;
 }
+.error-icon {
+    display: none;
+    position: absolute;
+    margin: 11px 380px 0;
+}
+.message {
+    display: none;
+    margin-bottom: 20px;
+    color: var(--pr-red);
+    font-style: oblique;
+    font-weight: 500;
+    font-size: 12px;
+}
+
 .form-button {
+    /* margin-top: 25px; */
     width: 424px;
     height: 50px;
     color: white;

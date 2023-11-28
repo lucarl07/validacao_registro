@@ -31,13 +31,43 @@
             </div>
 
             <form class="formulary" action="#">
-                <input type="text" class="form-input" id="inFirstName" placeholder="First Name">
-    
-                <input type="text" class="form-input" id="inLastName" placeholder="Last Name">
-    
-                <input type="text" class="form-input" id="inEmail" placeholder="Email Address">
-    
-                <input type="password" class="form-input" id="inPassword" placeholder="Password">
+
+                <div class="form-group" id="formGroup1">
+                    <div class="input-img-flex">
+                        <input type="text" class="form-input" id="inFirstName" placeholder="First Name">
+                        
+                        <img src="./images/icon-error.svg" class="error-icon" alt="Error: first name cannot be empty">
+                    </div>
+                    
+                    <span class="message"> First name cannot be empty </span>
+                </div>
+
+                <div class="form-group" id="formGroup">
+                    <div class="input-img-flex">
+                        <input type="text" class="form-input" id="inLastName" placeholder="Last Name">
+                        <img src="./images/icon-error.svg" class="error-icon" alt="Error: last name cannot be empty">
+                    </div>
+
+                    <span class="message"> First name cannot be empty </span>
+                </div>
+
+                <div class="form-group" id="formGroup">
+                    <div class="input-img-flex">
+                        <input type="text" class="form-input" id="inEmail" placeholder="Email Address">
+                        <img src="./images/icon-error.svg" class="error-icon" alt="Error: looks like this is not an email">
+                    </div>
+
+                    <span class="message"> First name cannot be empty </span>
+                </div>
+
+                <div class="form-group" id="formGroup">
+                    <div class="input-img-flex">
+                        <input type="password" class="form-input" id="inPassword" placeholder="Password">
+                        <img src="./images/icon-error.svg" class="error-icon" alt="Error: password cannot be empty or shorter than 8 characters">
+                    </div>
+
+                    <span class="message"> First name cannot be empty </span>
+                </div>
 
                 <button class="form-button" id="btnRegister">
                     Claim your free trial
