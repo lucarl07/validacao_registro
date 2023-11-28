@@ -26,7 +26,6 @@
 }
 
 .text-float {
-    border: 1px solid black;
     margin: auto;
     margin-right: 25px;
     width: 500px;
@@ -34,26 +33,25 @@
     color: white;
 }
 .text-float h1 {
-    font-size: 48px;
+    font-size: 49px;
     line-height: 56px;
     margin-bottom: 32px;
 }
 
 .register-area {
-    border: 1px solid black;
     margin: auto;
     margin-left: 25px;
 }
 .formulary {
     padding: 35px;
-    width: 450px;
+    width: 420px;
     height: 380px;
     background-color: white;
     border-radius: 15px;
 }
 .form-input {
     margin-bottom: 25px;
-    width: 450px;
+    width: 420px;
     height: 45px;
     border: 1.5px solid var(--ne-dark-blue);
     border-radius: 5px;
@@ -61,7 +59,7 @@
     font-weight: 500;
 }
 .form-button {
-    width: 454px;
+    width: 424px;
     height: 50px;
     color: white;
     background: var(--pr-green);
@@ -80,7 +78,8 @@
 }
 .form-button:active {
     height: 50px; 
-    margin-top: 3px; margin-bottom: -3px;
+    margin-top: 3px; 
+    margin-bottom: -3px;
     background-color: var(--sc-light-green);
     border-bottom-width: 1.5px;
     border-color: var(--pr-green);
