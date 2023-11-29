@@ -25,7 +25,9 @@ btnRegister.addEventListener('click', function() {
     inEmail = document.getElementById('inEmail').value,
     inPassword = document.getElementById('inPassword').value;
 
-    const emailRegex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/
+    // Declarando as expressões regulares:
+    const emailRegex = /^[a-z0-9\._]+@[a-z]+\.[a-z]{2,3}$/,
+    passwordRegex = /^[a-z0-9]{8,}$/i
 
     // Validando os dados:
     if(inFirstName === '') {
@@ -46,7 +48,7 @@ btnRegister.addEventListener('click', function() {
         turnDisplayOff(errorMsg3, errorIcon3)
     }
 
-    if(inPassword === '' || inPassword.length < 8) {
+    if(passwordRegex.test(inPassword) === false) {
         turnDisplayOn(errorMsg4, errorIcon4)
     } else {
         turnDisplayOff(errorMsg4, errorIcon4)
