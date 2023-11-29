@@ -40,7 +40,7 @@ btnRegister.addEventListener('click', function() {
         turnDisplayOff(errorMsg2, errorIcon2)
     }
 
-    if(emailRegex.test(inEmail) === true) {
+    if(emailRegex.test(inEmail) === false) {
         turnDisplayOn(errorMsg3, errorIcon3)
     } else {
         turnDisplayOff(errorMsg3, errorIcon3)
